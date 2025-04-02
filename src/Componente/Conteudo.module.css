@@ -1,13 +1,49 @@
-.conteiner{
-    background-color: rgb(68, 21, 70);
-    padding: 20px;
+/* Contêiner principal */
+.conteiner {
+    background: linear-gradient(135deg, rgba(68, 21, 70, 1) 0%, rgba(97, 35, 101, 1) 100%); /* Gradiente suave */
+    padding: 40px;
     display: flex;
+    flex-direction: column;
+    align-items: center; 
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     color: aliceblue;
-    font-size: 10px;
+    font-size: 16px; 
+    min-height: 100vh; 
+}
 
-}
-h1{
+/* Estilo do título */
+h1 {
     color: aliceblue;
+    font-size: 36px; 
+    font-weight: bold;
+    margin-bottom: 20px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    text-align: center; 
 }
+
+/* Estilo para parágrafos ou outros textos */
+p {
+    color: aliceblue;
+    font-size: 18px; 
+    line-height: 1.6; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+/* Estilo de botões ou links, caso haja algum no futuro */
+button {
+    background-color: #8e44ad; 
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9b59b6; 
+}
+

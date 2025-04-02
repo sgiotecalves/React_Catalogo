@@ -1,33 +1,75 @@
+/* Estilo principal do contêiner da barra de navegação */
 .conteiner {
-    background-color: black;
-    padding: 10px;
+    background: linear-gradient(135deg, rgba(93, 22, 95, 1) 0%, rgba(118, 28, 138, 1) 100%); /* Gradiente roxo suave */
+    padding: 15px 30px; 
     display: flex;
-    justify-content: center; 
+    justify-content: space-between; 
     align-items: center; 
     width: 100%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
+/* Estilo para os itens de navegação (Home, Filmes, Perfil) */
 .conteiner ul {
     display: flex;
-    gap: 20px;
+    gap: 30px; 
     list-style-type: none;
-    color: aliceblue;
     margin: 0;
     padding: 0;
+    color: aliceblue;
 }
 
+/* Estilo para os itens de navegação */
+.conteiner ul li {
+    font-size: 18px; 
+    font-weight: 500;
+    cursor: pointer; 
+    transition: color 0.3s ease; 
+}
+
+/* Efeito de hover nos itens de navegação */
+.conteiner ul li:hover {
+    color: #fff;
+    text-decoration: underline; 
+}
+
+/* Estilos para o campo de pesquisa */
 .pesquisa {
     display: flex;
-    margin-left: 50px; 
-    width: 300px; 
-    
+    align-items: center; 
+    position: relative;
 }
+
+/* Estilos para o input de pesquisa */
 .pesquisaInput {
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
+    padding: 10px 15px; 
+    border: 2px solid #fff; 
+    border-radius: 20px; 
     font-size: 16px;
-    width: 100%; 
-    
+    outline: none; 
+    width: 250px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+/* Efeito ao focar no campo de pesquisa */
+.pesquisaInput:focus {
+    border-color: #8e44ad; 
+    box-shadow: 0 0 5px rgba(142, 68, 173, 0.5); 
+}
+
+/* Estilo para o ícone de pesquisa */
+.iconePesquisa {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #8e44ad; 
+    cursor: pointer; 
+    transition: color 0.3s ease; 
+}
+
+/* Efeito de hover no ícone de pesquisa */
+.iconePesquisa:hover {
+    color: #fff; 
 }

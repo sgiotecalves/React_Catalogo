@@ -1,0 +1,66 @@
+/* Contêiner principal do card */
+.conteiner {
+    position: relative;
+    width: 280px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px; 
+    margin-left: 30px;
+    background-color: rgb(76, 9, 90);
+    transition: transform 0.3s ease; 
+}
+
+/* Imagem do card */
+.conteiner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Efeito de zoom no card */
+.conteiner:hover {
+    transform: scale(1.1); 
+}
+
+/* Estilo para o título */
+h3 {
+    font-size: 20px;
+    color: rgb(200, 35, 241);
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute; 
+    top: 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 2; 
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+/* Estilo para a descrição (p) */
+p {
+    font-size: 15px;
+    color: azure;
+    padding: 10px;
+    background-color: rgba(66, 4, 66, 0.8); 
+    width: 100%;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0; 
+    transform: opacity 0.3s ease;
+    z-index: 1; 
+    text-align: center;
+}
+
+/* Quando o mouse passa sobre o card, o título e a descrição aparecem */
+.conteiner:hover h3 {
+    opacity: 1; 
+}
+
+.conteiner:hover p {
+    opacity: 1;
+}
