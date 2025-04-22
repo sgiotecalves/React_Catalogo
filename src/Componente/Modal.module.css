@@ -1,0 +1,109 @@
+.modalback {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(25, 0, 50, 0.95);
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+    background-repeat: repeat;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+.modalConteiner {
+    background: linear-gradient(135deg, #2a0042, #1f002d);
+    color: #f8eaff;
+    border-radius: 16px;
+    padding: 24px;
+    width: 90%;
+    max-width: 720px;
+    box-shadow: 0 0 25px rgba(190, 75, 255, 0.6);
+    position: relative;
+    z-index: 1001;
+    animation: aparecer 0.4s ease-in-out;
+    overflow-y: auto;
+    max-height: 80vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #7625a3;
+    padding-bottom: 12px;
+}
+
+.modalHeader h2 {
+    margin: 0;
+    font-size: 26px;
+    color: #d18aff;
+    font-weight: 600;
+}
+
+.modalHeader button {
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.modalHeader button:hover {
+    color: #ff8fff;
+}
+
+.imgAndDetails {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.imgModal {
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+    flex-shrink: 0;
+}
+
+.movieDetails {
+    flex: 1;
+}
+
+.movieDetails ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #eacbff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.movieDetails li {
+    margin-bottom: 12px;
+}
+
+.movieDetails li::before {
+    content: "★ ";
+    color: #ffb3ff;
+    margin-right: 4px;
+    font-size: 14px;
+}
+
+@keyframes aparecer {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

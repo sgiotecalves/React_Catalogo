@@ -1,0 +1,28 @@
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #2a003f 0%, #1a002b 100%);
+    height: 150px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 52px;
+    color: #d8b4fe;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
