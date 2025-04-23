@@ -73,3 +73,14 @@
 .iconePesquisa:hover {
     color: #fff; 
 }
+/* Remove o estilo padrão dos links */
+.conteiner ul li a {
+    text-decoration: none; /* tira o sublinhado */
+    color: inherit; /* herda a cor do pai, que é aliceblue */
+}
+
+/* Opcional: efeito hover no link */
+.conteiner ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

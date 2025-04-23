@@ -1,6 +1,5 @@
 .titulo{
     font-family: Arial, Helvetica, sans-serif;
-<<<<<<< HEAD
     color:blue;
     font-size: 25px;
 }
@@ -9,8 +8,6 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:blueviolet;
     font-size: 14px;
-
-=======
     color: purple;
     font-size: 25px;
 }
@@ -18,5 +15,4 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: blueviolet;
     font-size: 14px;
->>>>>>> 1fc66cb31bf69e7804e5e2d3f438977f279caebb
 }

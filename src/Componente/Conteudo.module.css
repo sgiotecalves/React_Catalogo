@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @keyframes animarFundo {
     0% {
         background-position: 0% 50%;
@@ -24,7 +24,7 @@
     animation: animarFundo 15s ease infinite;
     border-radius: 12px;
 }
-=======
+
 /* Contêiner principal */
 .conteiner {
     background: linear-gradient(135deg, rgba(68, 21, 70, 1) 0%, rgba(97, 35, 101, 1) 100%); /* Gradiente suave */
@@ -74,4 +74,3 @@ button:hover {
     background-color: #9b59b6; 
 }
 
->>>>>>> 1fc66cb31bf69e7804e5e2d3f438977f279caebb

@@ -1,13 +1,14 @@
 import estilo from './Barranavegacao.module.css';
-import { FaSearch } from 'react-icons/fa'; // Importando o ícone de pesquisa
+import { FaSearch } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
-export function Barranavegacao() {
+export function BarraNavegacao() {
     return (
         <nav className={estilo.conteiner}>
             <ul>
-                <li>Home</li>
-                <li>Filmes</li>
-                <li>Perfil</li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/serie">Filmes</Link></li>
+                <li><Link to="/perfil">Perfil</Link></li>
             </ul>
             <div className={estilo.pesquisa}>
                 <input
@@ -15,7 +16,7 @@ export function Barranavegacao() {
                     className={estilo.pesquisaInput}
                     placeholder="Buscar..."
                 />
-                <FaSearch className={estilo.iconePesquisa} /> {/* Colocando o ícone de pesquisa */}
+                <FaSearch className={estilo.iconePesquisa} />
             </div>
         </nav>
     );

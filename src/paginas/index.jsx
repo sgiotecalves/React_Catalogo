@@ -1,5 +1,5 @@
 import { Barranavegacao } from "../Componente/Barranavegacao";
-import { Cabecalho } from "../Componente/cabecalho";
+import { Cabecalho } from "../Componente/Cabecalho";
 import { Conteudo } from "../Componente/Conteudo";
 
 function App() {
